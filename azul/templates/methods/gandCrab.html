@@ -1,0 +1,113 @@
+{% extends 'azul/index.html' %} {% block content %}
+<div class="container">
+  <div class="row text-center">
+    <h1 class="display-3 mt-5">Método de Desinfección para GANDCRAB</h1>
+    <h2 class="mt-3">Herramienta de desencriptación</h2>
+    <p class="mt-4 fst-italic fw-semibold fs-5">
+      Esta herramienta recupera los archivos cifrados, afectados por el
+      ransomware GandCrab (V1, V4, V5). Puede reconocer este ransomware y su
+      versión, por la extensión que agrega a los archivos cifrados y/o nota de
+      rescate:
+    </p>
+    <div class="p-3 mb-4">
+      <img src="/media/paso2/gand1.webp" alt="" class="img-fluid" />
+    </div>
+    <div class="col-8 mx-auto">
+      <p class="mt-4 fst-italic fw-semibold fs-5">
+        Se requiere la nota de rescate para recuperar la clave de descifrado.
+        Por favor asegúrese de no ejecutar una utilidad de limpieza que detecte
+        y elimine estos ransom-notes antes de la ejecución de esta herramienta.
+        La información dentro de las notas de rescate, tomada como entrada para
+        el procedimiento de recuperación de clave.
+      </p>
+    </div>
+    <div class="p-3 mb-4">
+      <img src="/media/paso2/gand2.webp" alt="" class="img-fluid" />
+    </div>
+    <h4 class="mt-3">Gandcrab V4 y V5</h4>
+    <div class="p-3 mb-4">
+      <img src="/media/paso2/gand3.webp" alt="" class="img-fluid" />
+    </div>
+    <h1>Pasos para el descifrado:</h1>
+    <p class="mt-4 fst-italic fw-semibold fs-5">
+      Paso 1: Descargue la herramienta de descifrado
+    </p>
+    <div class="p-2 col-8 mx-auto">
+      <p>En este boton se puede descargar la aplicacion</p>
+      <a
+        href="https://www.bitdefender.com/blog/labs/gandcrab-ransomware-decryption-tool-available-for-free/"
+        role="button"
+        class="btn btn-success"
+        >Descargar</a
+      >
+    </div>
+    <p class="mt-4 fst-italic fw-semibold fs-5 col-10 mx-auto">
+      Paso 2: haga doble clic en el archivo (previamente guardado como
+      BDGandCrabDecryptor.exe) y permita que ejecútelo haciendo clic en Sí en el
+      indicador de UAC.
+    </p>
+    <div class="p-3 mb-4">
+      <img src="/media/paso2/gand4.webp" alt="" class="img-fluid" />
+    </div>
+    <p class="fst-italic fw-semibold fs-5">
+      Paso 3: Seleccione "Acepto" para el Acuerdo de licencia de usuario final
+    </p>
+    <div class="p-3 mb-4">
+      <img src="/media/paso2/gand5.webp" alt="" class="img-fluid" />
+    </div>
+    <p class="fst-italic fw-semibold fs-5 col-10 mx-auto">
+      Paso 4: seleccione "Escanear todo el sistema" si desea buscar todos los
+      archivos cifrados o simplemente agregar la ruta a sus archivos cifrados.
+      Le recomendamos encarecidamente que también seleccione "Archivos de copia
+      de seguridad" antes de iniciar el descifrado proceso. Luego presione
+      "Escanear".
+    </p>
+    <div class="p-3 mb-4">
+      <img src="/media/paso2/gand6.webp" alt="" class="img-fluid" />
+    </div>
+    <p class="fst-italic fw-semibold fs-5 col-10 mx-auto">
+      Independientemente de si marca la opción "Copia de seguridad de archivos"
+      o no, la herramienta de descifrado intenta descifrar 5 archivos en la ruta
+      provista y NO continuará si la prueba no es Superada exitosamente.
+    </p>
+    <div class="p-3 mb-4">
+      <img src="/media/paso2/gand7.webp" alt="" class="img-fluid" />
+    </div>
+    <p class="fst-italic fw-semibold fs-5 col-10 mx-auto mb-5">
+      Al final de este paso, sus archivos deberían haber sido descifrados. Para
+      deshacerse de los archivos encriptados que dejó, simplemente busque
+      archivos que coincidan con la extensión y eliminelos a granel. No le
+      recomendamos que haga esto, a menos que verifique dos veces sus archivos.
+      se puede abrir de forma segura y no hay rastro de daño.
+    </p>
+  </div>
+</div>
+<div class="container mt-2">
+  <div class="row">
+    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+      <div class="d-grid gap-2 col-3 mx-auto text-center">
+        <a
+          class="btn btn-success btn-lg"
+          role="button"
+          href="{% url 'encuesta' %}"
+          >Siguiente</a
+        >
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container mt-3 mb-4">
+  <div class="row">
+    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+      <div class="d-grid gap-2 col-3 mx-auto text-center">
+        <a
+          class="btn btn-secondary btn-lg"
+          role="button"
+          href="{% url 'encryption8' %}"
+          >Volver</a
+        >
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

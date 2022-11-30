@@ -1,0 +1,31 @@
+.cuerpo {
+  background: #0f0c29; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #24243e,
+    #302b63,
+    #0f0c29
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #24243e,
+    #302b63,
+    #0f0c29
+  ); 
+}
+.estilo1 {
+  color: #ffffff;
+}
+#bg_white{
+  color: #ffffff;
+}
+.estilo2 {
+  width: 200px;
+  height: 200px;
+}
+.estilo3{
+  color: rgb(60, 0, 255);
+}
+.estilo4{
+  background-color: #ffffff;
+}

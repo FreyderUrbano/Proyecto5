@@ -1,0 +1,120 @@
+{% extends 'azul/index.html' %} {% block content %}
+
+<div class="container">
+  <div class="row text-center">
+    <h1 class="display-3 mt-5">Método de Desinfección para Petya</h1>
+    <h2 class="mt-3">Herramienta de descifrado de Petya</h2>
+    <h1 class="mt-4 display-4">Cómo descifrar y eliminar Petya Ransomware</h1>
+    <p class="mt-4 fst-italic fw-semibold fs-5">
+      La siguiente imagen aparece cuando eres infectado por Petya
+    </p>
+    <div class="border border-success p-3 mb-4">
+      <img src="/media/paso2/petya1.webp" alt="" class="img-fluid" />
+    </div>
+    <h1 class="mt-4 display-3">
+      Existen 2 herramientas que sirven para eliminar Petya las cuales son:
+    </h1>
+    <h4 class="mt-3">MalwareBytes Anti-Malware</h4>
+    <div class="p-3 mb-4">
+      <img src="/media/paso2/petya2.webp" alt="" class="img-fluid" />
+    </div>
+    <div class="border border-success p-4 col-4 mx-auto">
+      <p>En este boton se puede descargar la aplicacion</p>
+      <a
+        href="https://es.malwarebytes.com"
+        role="button"
+        class="btn btn-success"
+        >Descargar</a
+      >
+    </div>
+    <div class="text-start mt-4">
+      <h2 class="text-center">Pasos para usar MalwareBytes Anti-Malware</h2>
+      <p class="mt-4 fst-italic fw-semibold fs-5">
+        1. Descargar MalwareBytes Anti-Malware
+      </p>
+      <p class="mt-4 fst-italic fw-semibold fs-5">
+        2. Doble Click en el archivo descargado para instalarlo
+      </p>
+      <p class="mt-4 fst-italic fw-semibold fs-5">
+        3. Vamos a la pantalla analizar su pc
+      </p>
+      <p class="mt-4 fst-italic fw-semibold fs-5">
+        4. Elegimos analisis Completo.
+      </p>
+      <p class="mt-4 fst-italic fw-semibold fs-5">5. y Analizar ahora</p>
+      <p class="mt-4 fst-italic fw-semibold fs-5">
+        6. Si salen avisos de actualizacion damos en actuliazar ahora
+      </p>
+      <p class="mt-4 fst-italic fw-semibold fs-5">
+        7. Luego en Todos en Cuarentena
+      </p>
+      <p class="mt-4 fst-italic fw-semibold fs-5">
+        8. El sistema pedira reiniciar para terminar la limpieza
+      </p>
+    </div>
+    <h4 class="mt-3">HitmanPro</h4>
+    <div class="p-3 mb-4">
+      <img src="/media/paso2/petya3.webp" alt="" class="img-fluid" />
+    </div>
+    <div class="border border-success p-4 col-4 mx-auto">
+      <p>En este boton se puede descargar la aplicacion</p>
+      <a
+        href="https://www.hitmanpro.com/en-us/hmp"
+        role="button"
+        class="btn btn-success"
+        >Descargar</a
+      >
+    </div>
+    <div class="text-start mt-4 mb-4">
+      <h2 class="text-center">Pasos para usar MalwareBytes Anti-Malware</h2>
+      <p class="mt-4 fst-italic fw-semibold fs-5">1. Descargar la aplicación</p>
+      <p class="mt-4 fst-italic fw-semibold fs-5">
+        2. Doble click en el icono descargado para iniciar la instalación
+      </p>
+      <p class="mt-4 fst-italic fw-semibold fs-5">
+        3. Aceptar el contrato de licencia
+      </p>
+      <p class="mt-4 fst-italic fw-semibold fs-5">
+        4. Debe mantener la opcion seleccionada y dar en siguiente
+      </p>
+      <p class="mt-4 fst-italic fw-semibold fs-5">
+        5. El proceso se escaneo empezara en su pc
+      </p>
+      <p class="mt-4 fst-italic fw-semibold fs-5">
+        6. Una vez terminado dar en aceptar
+      </p>
+      <p class="mt-4 fst-italic fw-semibold fs-5">
+        7. Se mostrarán informes de eliminaciónes.
+      </p>
+    </div>
+  </div>
+</div>
+<div class="container mt-2">
+  <div class="row">
+    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+      <div class="d-grid gap-2 col-3 mx-auto text-center">
+        <a
+          class="btn btn-success btn-lg"
+          role="button"
+          href="{% url 'encuesta' %}"
+          >Siguiente</a
+        >
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container mt-3 mb-4">
+  <div class="row">
+    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+      <div class="d-grid gap-2 col-3 mx-auto text-center">
+        <a
+          class="btn btn-secondary btn-lg"
+          role="button"
+          href="{% url 'encryption8' %}"
+          >Volver</a
+        >
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

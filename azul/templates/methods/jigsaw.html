@@ -1,0 +1,97 @@
+{% extends 'azul/index.html' %} {% block content %}
+
+<div class="container">
+  <div class="row text-center">
+    <h1 class="display-3 mt-4">Método de Desinfección para jigsaw</h1>
+    <h1 class="mt-2">Jigsaw Decrypter</h1>
+    <p class="mt-2 fst-italic fw-semibold fs-5">
+      Herramienta de descifrado de ransomware
+    </p>
+    <h1>Cómo descifrar y eliminar Jigsaw Ransomware</h1>
+    <div class="">
+      <p class="mt-4 fst-italic fw-semibold fs-5">
+        Para descifrar sus archivos, lo primero que debe hacer es finalizar los
+        procesos firefox.exe y drpbx.exe en el Administrador de tareas para
+        evitar que se eliminen más archivos. Luego debe ejecutar MSConfig y
+        deshabilitar la entrada de inicio llamada firefox.exe que apunta al
+        ejecutable %UserProfile%\AppData\Roaming\Frfx\firefox.exe.
+      </p>
+    </div>
+    <div class="border border-success col-6 mx-auto p-4 mt-4">
+      <p class="">
+        Una vez que haya finalizado el ransomware y deshabilitado su inicio,
+        procedamos a descifrar los archivos. El primer paso es descargar y
+        extraer Jigsaw Decryptor desde el siguiente boton
+      </p>
+      <a
+        href="https://www.bleepingcomputer.com/download/jigsaw-decrypter/"
+        role="button"
+        class="btn btn-success"
+        >Descargar</a
+      >
+    </div>
+    <p class="mt-4 fst-italic fw-semibold fs-5">
+      Luego haga doble clic en el archivo JigSawDecrypter.exe para iniciar el
+      programa. Cuando se inicie el programa, aparecerá una pantalla similar a
+      la siguiente.
+    </p>
+    <div class="p-3">
+      <img src="/media/paso2/jigsaw1.webp" alt="" class="img-fluid" />
+    </div>
+    <p class="mt-4 fst-italic fw-semibold fs-5">
+      Luego haga doble clic en el archivo JigSawDecrypter.exe para iniciar el
+      programa. Cuando se inicie el programa, aparecerá una pantalla similar a
+      la siguiente.
+    </p>
+    <div class="p-3">
+      <img src="/media/paso2/jigsaw2.webp" alt="" class="img-fluid" />
+    </div>
+    <p class="mt-4 fst-italic fw-semibold fs-5">
+      Para descifrar sus archivos, simplemente seleccione el directorio y haga
+      clic en el botón Descifrar mis archivos. Si desea descifrar todo el disco,
+      puede seleccionar el disco C: en sí. Se recomienda que no marque la opción
+      Eliminar archivos cifrados hasta que haya confirmado que la herramienta
+      puede descifrar correctamente sus archivos. Cuando haya terminado de
+      descifrar sus archivos, la pantalla aparecerá como se muestra a
+      continuación.
+    </p>
+    <div class="p-3">
+      <img src="/media/paso2/jigsaw3.webp" alt="" class="img-fluid" />
+    </div>
+    <p class="fst-italic fw-semibold fs-5 mb-5 mt-4 ">
+      Ahora que sus archivos están descifrados, se sugiere ejecutar un programa
+      antivirus o antimalware para escanear su computadora en busca de
+      infecciones.
+    </p>
+  </div>
+</div>
+<div class="container mt-2">
+  <div class="row">
+    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+      <div class="d-grid gap-2 col-3 mx-auto text-center">
+        <a
+          class="btn btn-success btn-lg"
+          role="button"
+          href="{% url 'encuesta' %}"
+          >Siguiente</a
+        >
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container mt-3 mb-4">
+  <div class="row">
+    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+      <div class="d-grid gap-2 col-3 mx-auto text-center">
+        <a
+          class="btn btn-secondary btn-lg"
+          role="button"
+          href="{% url 'encryption8' %}"
+          >Volver</a
+        >
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

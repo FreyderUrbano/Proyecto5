@@ -1,0 +1,131 @@
+{% extends 'azul/index.html' %} {% block content %}
+
+<!-- Aqui desde herramientas -->
+<div class="info2" id="">
+  <h1 class="tit1">Realizar copias de seguridad de datos</h1>
+  <div class="" id="">
+    <p class="info1">
+      Tenga en cuenta los siguientes aspectos al momento de realizar copias de
+      seguridad de datos:
+    </p>
+  </div>
+  <!-- Para windows 11 -->
+  <h2 class="">Administración de Particiones:</h2>
+  <p class="">
+    Se recomienda almacenar sus datos en varias particiones y evite almacenar
+    archivos importantes dentro de la partición que contiene todo el sistema
+    operativo.
+  </p>
+  <h2 class="">Copias de seguridad de datos:</h2>
+  <p class="">
+    Se recomienda el uso de Dispositivos de almacenamiento externos y
+    mantenerlos desconectados. También se recomienda utilizar un servicio en la
+    nube o un servidor remoto. Se recomienda el uso de OneDrive, el cual permite
+    almacenar sus archivos y datos personales en la nube sincronizandolo con
+    todos sus dispositivos personales.
+  </p>
+  <h2 class="">Crear una copia de seguridad de datos:</h2>
+  <p class="">
+    El proceso de copia de seguridad es el mismo para todos los tipos de
+    archivos y carpetas. Así es como puede hacer una copia de seguridad de sus
+    archivos con Microsoft OneDrive
+  </p>
+  <h2 class="">Paso 1: Eleccion de Archivos</h2>
+  <p class="">
+    Haga clic en el icono de la nube de OneDrive para abrir el menú de OneDrive.
+    Mientras está en este menú, puede personalizar la configuración de la copia
+    de seguridad de sus archivos. Haga clic en Ayuda y Configuración y luego
+    seleccione Configuración en el menú desplegable.
+  </p>
+  <img
+    class=""
+    src="https://www.pcrisk.es/images/stories/ransomware-removal/open-one-drive-in-taskbar.jpg"
+  />
+
+  <p class="">
+    Vaya a la pestaña Copia de Seguridad y haga clic en Administrar Copia de
+    Seguridad:
+  </p>
+  <img
+    class=""
+    src="https://www.pcrisk.es/images/stories/ransomware-removal/go-to-onedrive-settings.jpg"
+  />
+  <p class="">
+    En este menú, puede optar por hacer una copia de seguridad del Escritorio y
+    de todos los archivos que contiene, y de las carpetas Documentos e Imágenes,
+    nuevamente, con todos los archivos en ellos. Haga clic en Iniciar copia de
+    seguridad.
+    <br />
+    Ahora, cuando agregue un archivo o carpeta en las carpetas Escritorio y
+    Documentos e imágenes, se respaldará automáticamente en OneDrive.
+    <br />
+    Para agregar carpetas y archivos que no se encuentran en las ubicaciones que
+    se muestran arriba, debe agregarlos manualmente.
+  </p>
+  <img
+    class=""
+    src="https://www.pcrisk.es/images/stories/ransomware-removal/go-to-manage-backup.jpg"
+  />
+  <p class="">
+    Abra el Explorador de Archivos y navegue hasta la ubicación de la
+    carpeta/archivo que desea respaldar. Seleccione el elemento, haga clic con
+    el botón derecho en él y haga clic en Copiar.
+  </p>
+  <img
+    class=""
+    src="https://www.pcrisk.es/images/stories/ransomware-removal/select-file-and-copy-it.jpg"
+  />
+  <p class="">
+    Luego, navegue hasta OneDrive, haga clic con el botón derecho en cualquier
+    lugar de la ventana y haga clic en Pegar. Alternativamente, puede
+    simplemente arrastrar y soltar un archivo en OneDrive. OneDrive creará
+    automáticamente una copia de seguridad de la carpeta/archivo.
+  </p>
+  <img
+    class=""
+    src="https://www.pcrisk.es/images/stories/ransomware-removal/paste-the-file-in-onedrive-folder.jpg"
+  />
+  <p class="">
+    Todos los archivos agregados a la carpeta OneDrive se respaldan en la nube
+    automáticamente
+  </p>
+  <img
+    class=""
+    src="https://www.pcrisk.es/images/stories/ransomware-removal/file-syncing-to-onedrive.jpg"
+  />
+  <p class="">
+    Para acceder a los archivos que solo se encuentran en OneDrive en línea,
+    vaya al menú desplegable Ayuda y Configuración y seleccione Ver en línea.
+  </p>
+  <img
+    class=""
+    src="https://www.pcrisk.es/images/stories/ransomware-removal/go-to-onedrive-online-v2.jpg"
+  />
+  <h2 class="">Paso 2: Restaurar los Archivos Dañados</h2>
+  <p class="">
+    Si sus archivos de OneDrive se eliminan, corrompen o infectan con malware,
+    puede restaurar todo su OneDrive a un estado anterior. Así es como puede
+    restaurar su OneDrive completo:
+  </p>
+  <img
+    class=""
+    src="https://www.pcrisk.es/images/stories/ransomware-removal/restore-your-onedrive.jpg"
+  />
+  <p class="">
+    1. Haga clic en el engranaje de Configuración en la parte superior de la
+    página. Luego, haga clic en Opciones y seleccione Restaurar su OneDrive.
+  </p>
+  <p class="">
+    2. Seleccione una fecha de la lista desplegable. La detección automática de
+    ransomware, seleccionará una fecha de restauración.
+  </p>
+</div>
+
+<br /><br />
+<br /><br />
+<!-- Boton volver -->
+<div>
+  <a class="volver-copy" role="button" href="{% url 'encryption5' %}">Volver</a>
+</div>
+
+{% endblock %}

@@ -1,0 +1,76 @@
+{% extends 'azul/index.html' %} {% block content %}
+
+<div class="container">
+  <div class="row">
+    <div class="text-center">
+      <h1 class="display-3 mt-4">Método de Desinfección para Locky</h1>
+      <h3 class="mt-4">
+        Búsqueda de herramientas de desencriptado de ransomware
+      </h3>
+      <p class="fst-italic mt-4 fs-4">
+        Los algoritmos de encriptado utilizados por la mayoría de las
+        infecciones de tipo ransomware son extremadamente sofisticados y, si el
+        encriptado se realiza correctamente, solo el desarrollador puede
+        restaurar los datos. Esto se debe a que el desencriptado requiere una
+        clave específica, que se genera durante el encriptado. Restaurar datos
+        sin la clave es imposible.
+      </p>
+    </div>
+  </div>
+</div>
+<div class="col-4 mx-auto text-center">
+  <table class="table table-striped table-secondary mt-4">
+    <thead>
+      <tr>
+        <th scope="col" class="fst-italic">LOCKY</th>
+        <th scope="col" class="fst-italic">
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAk5JREFUSEudVwtRxUAM3DioBByAhFcJKEADChgUoAEFT8J7El4dIKEOwqSX3ieX+0BnYNpyl032NptCkIsA8HHnPZqXZnHaNnEX9spv+akuNzQBxOe2sDnLtc7efVMWN5Fphwmzu89HzF4STw8nz6Gyf1x9qoqALtV/hZytMhfTPHAevXWfZzxYE4Djon50d1lHRK31J2SjneokUjPwE4A3TfobjJ8qiHteKWakeqY9ska/gHHT5xXAvd2TfuRIdVRySynl+wtggfsb7V/nxVWWVAATcG+3n5+QEdfAbhK4Ah9BleoZqYf4wu68ZZat4p9x7UXqzDUf/wA+KktUE1awFVffUrSdsiaxpkb8AsYXQK8A73ElcarYABOwMHAF8A7g0WqznrheVLlLCAA5y10PqdVOslbaTPZKoiuHvdU06wFLEOnPZyXioYF2AI6qaQHxDXyAyrURcGHQrvO0GHEjA1m0VSI4QCvAJxsSTJiQqm4gyNFIfZvogIA9PJ6zPJ2l69VGGlXlAD4JuOrnwCsBHxzoFYyNAyOqCX/WhXk8nr4HOAHP2hhCt7yTK90TNnAAHY3WzhlXCVnabexNz74PqmFjxfkI63yBWNpP8ABK2ON3WR7EIdVU3OrporiM9mO9qndM7xlFdtVUu0duXhIW4jgY9ExbXl1L+g/ArlQWFWah3jpvPyF3OuXfzyN1JleqWCl8w8bpOVe51jGBKqkaW/0kM5Ck6nLeNXu60+55R4wtITlnaWkzfjJc0xJamhYjry7NtfvvRUtWfov+AsWH/SRCufBiAAAAAElFTkSuQmCC"
+          />
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          <div class="row">
+            <div class="col">
+              <p class="fw-semibold fst-italic">
+                Búsqueda de herramientas de desencriptado de Ransomware
+              </p>
+            </div>
+          </div>
+        </td>
+        <td>
+          <div class="row">
+            <div class="col-4">
+              <div class="d-grid gap-2">
+                <a
+                  class="btn btn-success btn-sm"
+                  role="button"
+                  href="{% url 'tools' %}"
+                  >Mostrar</a
+                >
+              </div>
+            </div>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div class="container mt-4 mb-4">
+  <div class="row">
+    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+      <div class="d-grid gap-2 col-3 mx-auto text-center">
+        <a
+          class="btn btn-secondary btn-lg"
+          role="button"
+          href="{% url 'encryption8' %}"
+          >Volver</a
+        >
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

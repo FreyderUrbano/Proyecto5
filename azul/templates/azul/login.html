@@ -1,0 +1,157 @@
+{% extends 'azul/index.html' %} {% block content %} {% if request.user.is_authenticated %}
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+      <div class="text-center">
+        <div class="position-absolute top-50 start-50 translate-middle">
+          <h1 class="display-1 estilo3">Ransomware</h1>
+          <h6 class="">
+            El Ransomware es un tipo de malware que secuestra datos mediante
+            cifrado. El atacante cifra los datos del ordenador o del dispositivo
+            móvil y exige un pago por la clave de descifrado.
+          </h6>
+          <h1 class="">
+            Causas con las que suelen ocurrir este tipo de infecciones:
+          </h1>
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                <h4 class="">Enlaces o archivos adjuntos en correos electrónicos.</h4>
+              </div>
+              <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                <h4 class="">Acceder a páginas web comprometidas.</h4>
+              </div>
+              <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                <h4 class="">
+                  Instalación de programas infectados, normalmente descargados a
+                  través de páginas no oficiales.
+                </h4>
+              </div>
+            </div>
+           </div>
+        
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+      <div class="position-absolute bottom-0 start-50 translate-middle-x">
+        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+          <footer class="bg-light text-center text-lg-start">  
+            <div class="text-center p-3" style="background-color: rgb(33, 37, 41);">
+              <div id="current_date" class="estilo1"></p>
+                <script>
+                date = new Date();
+                year = date.getFullYear();
+                month = date.getMonth() + 1;
+                day = date.getDate();
+                document.getElementById("current_date").innerHTML = day + "/" + month + "/" + year;
+                </script>
+         
+            </div>
+          </footer>
+        </div>
+    </div>
+  </div>
+</div>
+
+{% else %}
+
+<!-- 
+    Formulario de inicio de sesión
+ -->
+
+  
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+        <form
+          method="post"
+          class="position-absolute top-50 start-50 translate-middle needs-validation p-5
+          bg-dark rounded "
+        >
+          {% csrf_token %}
+          <div class="mb-3 text-center">
+            <h1 class="estilo1">INICIAR SESIÓN</h1>
+          </div>
+          <div class="mb-3">
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="basic-addon1"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAshJREFUSEuNl4tVGzEQRe9UAB2EVGBTQewOnA6gAjsVQCqIUwElJB1gV8BSQSgBV6Cc0Wql0W+9Ovizu/J83rx5I4SwBHDThfns3bdbxz32vWGocKS78xU9WZcz7pdEVkepYeqfS+nWlxEJE9MGxyrYG4Czt9PErM5ed44ZN39T3Bwvd8ALcFuY+wQegb9tN3URI9Tz8fqnR4G9N9Hf/AM45uUcIbSgTiaWJL0BXoPBM8IRxwnQTHcCBwffwvMt+GfdlaCOW7qpDAgrHO/AOlnMsvkAvgADyH3KsiCN6aJ+xsnDVKQMyiKlZ+Ap2r3Cm5HVsQsL3o+FGWEeA9865NRh7wbhNRC7grtszrqdIncijHcO/oX4vreZ6+nyAE4Zr+sroNB3i1iwul2PQKIb4DdwSMTO0FI274FL1W6NzqyVq8lFOSJuH2EUToVWWNbH4K4xO3/eTFpuwZ0EVkGTtV1UsXw7GaYXrJ9tqS68pVDchfpOUllaPQMPZW17rmeGRDdarbHNUjNXqfSKtXTKLaxxHUSkVZTDJS7TnsJxF/Z1UC5VLf3eamXNXF9aZ/1cIJnNQeRv6hTS3lRo28vMShONQv8o8Nk6XEwl6ZncIbzgdARG6xeQIUs3Ba1o3Jgc2qMybKihHht0DfJmpFR7U8nzkUtshbky/wCyN8HdZ9Anx3XBBAYHK4RLGP5mzM2QKBFtB+5PgFLrrc6z1WK1nTLtadQ/CFjj2na/AkI/AbXrV2Me+/uanQ71d4R1feCaPYGUWY3I+TOZn3JxtTKeiJhF2YJq2jgD/rNDngJXdMjWjsOPlZlv4akZgU0eLDmHaxtOtY4ky6AOpu2U2SKc4iEtaks2CmebW2Dj0lktOxyUUKtgTGeqafp0tcOSpSMUtb1uO7WVqFL/3rY6SlumUquX6PvVvFOrLCDd3H8ShaGZsZ1R9ZrXsPk/ukUGNqlMAisAAAAASUVORK5CYII="/></span>
+              <input
+                required
+                type="text"
+                class="form-control"
+                name="username"
+                placeholder="Usuario"
+                aria-label="Username"
+                aria-describedby="basic-addon1"
+              />
+            </div>
+  
+            <!-- <div class="form-floating mb-3">
+              <input type="text" class="form-control" id="floatingInput" placeholder="Nombre" name="username">
+              <label for="floatingInput">Nombre de usuario</label>
+            </div> -->
+  
+            <!-- <label for="validationDefault01" class="form-label estilo1"
+              >Nombre de usuario</label
+            >
+            <input
+              required
+              type="text"
+              class="form-control is-valid"
+              id="validationDefault01"
+              aria-describedby="emailHelp"
+              name="username"
+              placeholder=""
+            /> -->
+          </div>
+          <div class="mb-3">
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="basic-addon1"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAnhJREFUSEull+Fx2zAMhT9M0MsEcSdoMkHTDbxB7QmcTGCP4A2SDbqCu4GzgUdQJmCPIkxRIEjprvojmYLwgIcHkBb0EiDcf1R381ZAwoJ9y0BdxVvj6oD1o8z+kllpPD33gd2oV3KzEFwGznb1A8yiTgnV2bS58+xd4JxozfaiDtxEjSaiTYfqMrP6uZ/fsn2dcUlsq06ttFw+fIktZvy/mXnfr6F6AzwCX8C1dlI3tKtNB73OOH25BTlCeDLfXIA9wi2x6vfoWpas3Rk4FD3j+fkFXLw2K43L6tpKR67K+bdDeFeNRHo/EgCR8i3wUx0PAt8DDBNQrbjWilfj6Ohbqqk8QbiZdM8gBx2EbwHOdrbUWRoOdEjkjCWwDcgfHf17kA9/G5AbhEeBa0BeZ9O4PyY/UYY04xzjKcBR43sAGeIWVI/rMaDfdS1b1c3rqotpuNzfnFBggYegwFm9UwSx7jPgNSoGErCyUrZTbKGRaoF9SMLyrlj3SPVngFc12BXBRIB4zdZSaRgK4FlhRnEJDAF5nsSVy3EO91aDNyZxZbZSc4/2J4GjHi6qeWEXYpTv95aJ7SRwCdpOAi/qKLZabLGxnQR2IWUYrxe9m2DmjefN6rPAoRpMc9Kf8whtK7kJrMFOKivOXLHeJwg/zNu/Wjvb30YL/b5SYH/b0ow3EtioKK7lrrd2MzCTMQdoqE7j0+nd4tjWG4Ttc2qJGP1nYNdd/ww7i96D7E3vBNzZ3epCrBwXxqfNwQB3YDp66UvJlG+aXOYzN/uOTYuABT91jRcoap+xOyXwj7fl6iJpaZIv/C+ah+D77Ku6c3y37dH9w1cGqnH8A3PFBTa8OFqqAAAAAElFTkSuQmCC"/></span>
+              <input
+                required
+                type="password"
+                class="form-control"
+                name="password"
+                placeholder="Contraseña"
+                aria-label="Username"
+                aria-describedby="basic-addon1"
+              />
+            </div>
+  
+            <!-- <label for="exampleInputPassword1" class="form-label estilo1"
+              >Contraseña</label
+            >
+            <input
+              required
+              type="password"
+              class="form-control is-valid"
+              id="exampleInputPassword1"
+              name="password"
+              placeholder=""
+            /> -->
+          </div>
+          <div class="d-grid gap-2 mb-3">
+            <button type="submit" class="btn btn-primary">Ingresar</button>
+          </div>
+          <p class="estilo1">
+            ¿Ha olvidado su clave? Puede restaurarla
+            <a href="{% url 'password_reset' %}" role="button" class="estilo3"
+              >aqui</a
+            >
+          </p>
+        </form>
+      </div>
+    </div>
+  </div>
+  
+  {% endif %} {% endblock %}
+
+
+
+
+

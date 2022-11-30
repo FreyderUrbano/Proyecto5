@@ -1,0 +1,31 @@
+{% extends 'azul/index.html' %} {% block content %}
+
+<h1 class="bitcase">Consulta de Casos</h1>
+<br />
+<br />
+<!-- 
+  Tabla de Bitacora de Casos (Django)
+ -->
+<table class="tabla">
+  <tr>
+    <th scope="row">Empresa</th>
+    <th>Nit Empresa</th>
+    <!-- <th>Evidencia</th> -->
+    <th>Fecha de Creación</th>
+  </tr>
+  {% for post in cases %}
+  <tr>
+    <td>{{ post.name }}</td>
+    <td>{{ post.nitempresa }}</td>
+    <!-- <td><img class="imagen" src="{{ post.imagen.url }}" /></td> -->
+    <td><time date-time="#">{{ post.timestamp }}</time></td>
+    <td>
+      <button type="submit">
+        <a href="{% url 'survey' post.id %}">Continuar</a>
+      </button>
+    </td>
+  </tr>
+  {% endfor %}
+</table>
+
+{% endblock %}

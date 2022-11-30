@@ -1,0 +1,43 @@
+{% extends 'azul/index.html' %} {% block content %}
+
+<div class="container">
+  <div class="row">
+    <h1 class="display-3 text-center  mt-4">
+      Cierre la sesión de las cuentas de almacenamiento en la nube
+    </h1>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <p class=" fs-3 text-end mt-4">
+      Algunos tipos de ransomware podrían secuestrar el software que maneja los
+      datos almacenados en "la Nube". Por lo tanto, los datos podrían estar
+      corruptos/encriptados. Por esta razón, debe cerrar la sesión de todas las
+      cuentas de almacenamiento en la nube dentro de los navegadores y otro
+      software relacionado. También debe considerar desinstalar temporalmente el
+      software de administración de la nube hasta que la infección se elimine
+      por completo.
+    </p>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="text-center mt-4">
+      <img class="img-fluid" src="/media/paso1/8windows11.webp" />
+      <h5 class=" mt-2">Windows 10-11/Configuración.</h5>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="d-grid gap-2 col-3 mx-auto text-cente m-4">
+      <a
+        class="btn btn-secondary btn-lg"
+        role="button"
+        href="{% url 'encryption1' %}"
+        >Volver</a
+      >
+    </div>
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,64 @@
+{% extends 'azul/index.html' %} {% block content %}
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+      <div class="text-center mt-4 mb-4">
+        <h1 class="display-2">Consulta de casos</h1>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Barra de busqueda deshabilitada -->
+<!-- <div class="buscar">
+  <form method="get">
+    <input class="" type="text" name="buscar" />
+    <span>
+      <button type="submit" class="">Buscar</button>
+    </span>
+  </form>
+</div> -->
+
+<!-- 
+  Tabla de Bitacora de Casos (Django)
+ -->
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+      <table class="table table-dark table-striped">
+        <thead>
+          <tr>
+            <th scope="row" class="text-center">Empresa</th>
+            <th class="text-center">Nit</th>
+            <th class="text-center">Ransomware</th>
+            <th class="text-center">Evidencia</th>
+            <th class="text-center">Fecha de Creación</th>
+            <th class=""></th>
+          </tr>
+        </thead>
+        {% for post in cases %}
+        <tr>
+          <td class="text-center">{{ post.name }}</td>
+          <td class="text-center">{{ post.nitempresa }}</td>
+          <td class="text-center">{{ post.rams }}</td>
+          <td class="">
+            <img class="img-fluid" src="{{ post.imagen.url }}" />
+          </td>
+          <td><time date-time="#">{{ post.timestamp }}</time></td>
+          <td>
+            <a href="{% url 'methodology' %}" role="button" class="btn btn-primary btn-lg">Continuar</a>
+          </td>
+        </tr>
+        {% endfor %}
+      </table>
+    </div>
+  </div>
+</div>
+
+<!-- <br /><br />
+<button class="botcase1" type="submit">
+  <a class="boton-volver" href="{% url 'feed' %}">Volver</a>
+</button> -->
+
+{% endblock %}

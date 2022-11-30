@@ -1,0 +1,45 @@
+{% extends 'azul/index.html' %} {% block content %}
+
+<div class="container">
+  <div class="row">
+    <div class="text-center">
+      <h1 class="display-4">
+        Metodología para contrarrestar infección por ransomware
+      </h1>
+      <h3 class="pt-2">
+        Pasos a seguir para controlar y hallar solución a infecciones por
+        ransomware
+      </h3>
+      <h1 class="display-4 pt-2">Paso 2</h1>
+      <h2 class="pb-2">Cerrar la escena de la infección</h2>
+      <div class="">
+        <p>
+          Como en una escena del crimen se debe cerrar el lugar de los hechos
+          para encontrar posibles pistas que ayuden a solucionar el problema
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-4">
+    <div class="row">
+      <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+        <div class="d-grid gap-2 col-3 mx-auto text-center">
+          <a
+            class="btn btn-primary btn-lg"
+            role="button"
+            href="{% url 'encryption1' %}"
+            >Continuar</a
+          >
+          <a
+            class="btn btn-secondary btn-lg"
+            role="button"
+            href="{% url 'methodology' %}"
+            >Volver</a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {% endblock %}
+</div>

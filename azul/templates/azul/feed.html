@@ -1,0 +1,78 @@
+{% extends 'azul/index.html' %} {% block content %}
+<!-- 
+    Divicion cuando usuario inicia sesión (Django)
+ -->
+ 
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+      <div class="text-center">
+        <div class="">
+          <h1 class="display-1 estilo3">Ransomware</h1>
+          <h6 class="">
+            El Ransomware es un tipo de malware que secuestra datos mediante
+            cifrado. El atacante cifra los datos del ordenador o del dispositivo
+            móvil y exige un pago por la clave de descifrado.
+          </h6>
+          <h1 class="">
+            Causas con las que suelen ocurrir este tipo de infecciones:
+          </h1>
+          
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                <h4 class="">Enlaces o archivos adjuntos en correos electrónicos.</h4>
+              </div>
+              <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                <h4 class="">Acceder a páginas web comprometidas.</h4>
+              </div>
+              <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                <h4 class="">
+                  Instalación de programas infectados, normalmente descargados a
+                  través de páginas no oficiales.
+                </h4>
+              </div>
+            </div>
+           </div>
+        
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+      <div class="position-absolute bottom-0 start-50 translate-middle-x">
+        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+          <footer class="bg-light text-center text-lg-start">  
+            <div class="text-center p-3" style="background-color: rgb(33, 37, 41);">
+              <div id="current_date" class="estilo1"></p>
+                <script>
+                date = new Date();
+                year = date.getFullYear();
+                month = date.getMonth() + 1;
+                day = date.getDate();
+                document.getElementById("current_date").innerHTML = day + "/" + month + "/" + year;
+                </script>
+         
+            </div>
+          </footer>
+        </div>
+    </div>
+  </div>
+</div>
+
+<!-- <div class="divi" style="text-align: center">
+  <h1 class="bra1">Registrar Nuevos Casos</h1>
+  <button type="submit" class="boton2">
+    <a class="b1" href="{% url 'cases' %}" role="button">Registro</a>
+  </button>
+  <h1 class="bra2">Consultar Casos</h1>
+  <button type="submit" class="boton3">
+    <a class="b2" href="{% url 'consultcases' %}" role="button">Consulta</a>
+  </button>
+</div> -->
+
+
+{% endblock %}

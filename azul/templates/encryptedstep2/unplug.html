@@ -1,0 +1,55 @@
+{% extends 'azul/index.html' %} {% block content %}
+
+<div class="container">
+  <div class="row">
+    <div class="text-center mt-4">
+      <h1 class="display-3">
+        Desenchufe todos los dispositivos de almacenamiento
+      </h1>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <p class="fs-3 text-end mt-4">
+      Todos los dispositivos de almacenamiento externo (unidades flash, discos
+      duros portátiles, etc.) deben desconectarse inmediatamente; sin embargo,
+      le recomendamos encarecidamente que expulse cada dispositivo antes de
+      desconectarlo para evitar la corrupción de datos:
+    </p>
+  </div>
+</div>
+<div class="container mt-4 mb-4">
+  <div class="row">
+    <h3 class="">
+      Navegue a "Este equipo", haga click con el botón derecho del mouse en cada
+      dispositivo conectado y seleccione "Expulsar"
+    </h3>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="text-center">
+      <img class="img-fluid" src="/media/paso1/7windows11.webp" />
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <h5 class="text-center mt-2">Windows 10-11/Este equipo.</h5>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="d-grid gap-2 col-3 mx-auto text-cente m-4">
+      <a
+        class="btn btn-secondary btn-lg"
+        role="button"
+        href="{% url 'encryption1' %}"
+        >Volver</a
+      >
+    </div>
+  </div>
+</div>
+
+{% endblock %}

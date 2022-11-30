@@ -1,0 +1,84 @@
+{% extends 'azul/index.html' %} {% block content %}
+<form enctype="multipart/form-data" method="post" , class="">
+  {% csrf_token %}
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+        <div class="mb-3">
+          <label for="validationServer01" class="form-label" id="">Que Ransomware fue el que te infecto</label>
+          <input required type="text" class="form-control is-valid" 
+          id="validationServer01" placeholder="" name="question1">
+        </div>
+        <div class="mb-3">
+          <label for="validationServer01" class="form-label" id="">De 1 a 5 que le pareció el método de desinfección</label>
+          <form name="formulario" method="post" action="http://pagina.com/send.php">
+            <!-- Lista de selección -->
+            Selecciona la opción deseada:
+            <select name="combo">
+              <!-- Opciones de la lista -->
+              <option value="1">Opción 1</option>
+              <option value="2" selected>Opción 2</option> <!-- Opción por defecto -->
+              <option value="3">Opción 3</option>
+              <option value="4">Opción 3</option>
+              <option value="5">Opción 3</option>
+            </select>
+          </form>
+          <input required type="text" class="form-control is-valid" id="validationServer01" placeholder="" name="question2">
+        </div>
+        <div class="mb-3">
+          <label for="validationServer01" class="form-label" id="">
+            Fue fácil el manejo del paso a paso de la página web</label>
+            <button>SI</button> <button>NO</button><label>"  "Argumente su respuesta</label>
+          <input required type="text" class="form-control is-valid" id="validationServer01" placeholder="" name="question3">
+        </div>
+        <div class="mb-3">
+          <label for="validationServer01" class="form-label" id="        ">
+            Fue positivo el uso de la metodología planteada en este proyecto:</label>
+            <button>SI</button> <button>NO</button><label>"  "Argumente su respuesta</label>
+          <input required type="text" class="form-control is-valid" id="validationServer01" placeholder="" name="question4">
+        </div>
+        <div class="mb-3">
+          <label for="validationServer01" class="form-label" id="">¿Puso resolver su caso de infección?</label>
+          <button>SI</button> <button>NO</button><label>"  "Argumente su respuesta</label>
+          <input required type="text" class="form-control is-valid" id="validationServer01" placeholder="" name="question5">
+        </div>
+        <div class="mb-3">
+          <label for="validationServer01" class="form-label" id="">¿Los pasos planteados fueron claros y fáciles de ejecutar?</label>
+          <button>SI</button> <button>NO</button><label>"  "Argumente su respuesta</label>
+          <input required type="text" class="form-control is-valid" id="validationServer01" placeholder="" name="question6">
+        </div>
+        <div class="mb-3">
+          <label for="validationServer01" class="form-label" id="">Al final de la metodología pudo o no recuperar su información</label>
+          <button>SI</button> <button>NO</button><label>"  "Argumente su respuesta</label>
+          <input required type="text" class="form-control is-valid" id="validationServer01" placeholder="" name="question7">
+        </div>
+        <div class="mb-3">
+          <label for="validationServer01" class="form-label" id="">Cual fue la moneda que le solicitaron como pago</label>
+          <form name="formulario" method="post" action="http://pagina.com/send.php">
+            <!-- Lista de selección -->
+            Selecciona la opción deseada:
+            <select name="combo">
+              <!-- Opciones de la lista -->
+              <option value="1">BITCOIN</option>
+              <option value="2">EthereumOpción</option> <!-- Opción por defecto -->
+              <option value="3">Cardano </option>
+              <option value="4">Tether </option>
+              <option value="5">Binance Coin</option>
+              <option value="5">Dogecoin</option>
+              <option value="5">USDCoin</option>
+              <option value="5">Polkadot</option>
+            </select>
+          </form>
+          <!-- <input required type="text" class="form-control is-valid" id="validationServer01" placeholder="" name="question8"> -->
+<br/><br/>
+        </div>
+        <div class="mb-3 d-grid gap-2 col-4 mx-auto">
+          <button class="btn btn-success" type="submit">Registrar</button>
+        </div>
+    </div>
+  </div>
+
+</form>
+
+{% endblock %}

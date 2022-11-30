@@ -1,0 +1,42 @@
+{% extends 'azul/index.html' %} {% block content %}
+
+<h2 class="tit-scan">Realizar Escaneo</h2>
+
+<div class="div-scan" id="">
+  <h1 class="text-scan">
+    Para realizar un escaneo efectivo de archivos se recomienda el uso de la
+    siguiente aplicación llamada Recuva la cual es fácil de instalar y manejar.
+  </h1>
+  <h1 class="tit-recuva">Herramienta Recuva</h1>
+  <p class="">Realizar Escaneo:</p>
+  <p>
+    Para empezar, se debe activar el modo de revisión profunda como se muestra
+    en la siguiente imagen:
+  </p>
+  <img
+    class=""
+    src="https://www.pcrisk.es/images/stories/ransomware-removal/ransomware-removal-recuva-data-recovery-tool-step-1.jpg"
+  />
+  <p class="">
+    Se debe esperar un tiempo mientras Recuva realiza la revisión pertinente,
+    esto depende del volumen de archivos a escanear como se muestra en la
+    siguiente imagen:
+  </p>
+  <img
+    class=""
+    src="https://www.pcrisk.es/images/stories/ransomware-removal/ransomware-removal-recuva-data-recovery-tool-step-2.jpg"
+  />
+  <p class="">Al finalizar el escaneo se procede a recuperar archivos.</p>
+  <img
+    class=""
+    src="https://www.pcrisk.es/images/stories/ransomware-removal/ransomware-removal-recuva-data-recovery-tool-step-3.jpg"
+  />
+  <br />
+  <a style="color: white">Enlace de Descarga</a>
+</div>
+<br /><br />
+<br />
+<div class="">
+  <a class="volver-scan" role="button" href="{% url 'encryption4' %}">Volver</a>
+</div>
+{% endblock %}

@@ -1,0 +1,105 @@
+{% extends 'azul/index.html' %} {% block content %}
+
+<div class="container">
+  <div class="row text-center">
+    <h1 class="display-3 mt-5">Método de Desinfección para Shade / Troldesh</h1>
+    <h2 class="mt-3">Herramienta de descifrado de ransomware</h2>
+    <h1 class="mt-4 display-4">Shade Decriptor</h1>
+
+    <p class="mt-4 fst-italic fw-semibold fs-5">
+      Esta herramienta recupera archivos cifrados por el ransomware
+      Shade/Troldesh. Si bien puede ser fácil para el ojo inexperto confundirlo
+      con el ransomware Crysis/Dharma, Shade es bastante diferente en varios
+      aspectos. Uno puede distinguir esta familia y versión de ransomware por la
+      extensión que agrega a los archivos cifrados, por unas 10 notas de rescate
+      similares o por la forma en que se nombran los archivos cifrados (base64):
+    </p>
+    <h3 class="mt-4">
+      Extensiones utilizadas para nombres de archivos cifrados:
+    </h3>
+    <div class="col-8 mx-auto">
+      <p class="mt-4 fst-italic fw-semibold fs-5">
+        .xtbl .ytbl .breaking_bad .heisenberg .better_call_saul .los_pollos
+        .da_vinci_code .magic_software_syndicate .windows10 .windows8
+        .no_more_ransom .tyson .crypted000007 .crypted000078 .rsa3072
+        .decrypt_it .dexter .miami_california
+      </p>
+    </div>
+    <h3 class="mt-4">Notas de rescate:</h3>
+    <div class="border border-success p-3 mb-4">
+      <img src="/media/paso2/shade1.webp" alt="" class="img-fluid" />
+    </div>
+    <div class="col-8 mx-auto">
+      <p class="mt-4 fst-italic fw-semibold fs-5">
+        la identificación se puede recuperar a partir de notas de rescate o
+        mediante fuerza bruta en el conjunto limitado de claves liberadas.
+      </p>
+    </div>
+    <div class="border border-success p-3 mb-4">
+      <img src="/media/paso2/shade2.webp" alt="" class="img-fluid" />
+    </div>
+    <h3 class="mt-4">Cómo utilizar esta herramienta</h3>
+    <div class="border border-success p-4 mt-3 col-8 mx-auto">
+      <p>
+        1: Descargue la herramienta de descifrado a continuación y guárdela en
+        su computadora.
+      </p>
+      <a
+        href="https://download.bitdefender.com/am/malware_removal/BDShadeDecryptor.exe"
+        role="button"
+        class="btn btn-success"
+        >Descargar</a
+      >
+      <p class="pt-4">
+        Paso 2: haga doble clic en el archivo (previamente guardado como
+        BDParadiseDecryptor.exe) y permita que se ejecute haciendo clic en Sí en
+        el indicador de UAC.
+      </p>
+      <p class="pt-4">Paso 3: Acepte el Acuerdo de licencia de usuario final</p>
+      <div class="p-2">
+        <img src="/media/paso2/shade3.webp" alt="" class="img-fluid" />
+      </div>
+    </div>
+    <h4 class="mt-4">
+      Al final de este paso, sus archivos deberían haber sido descifrados.
+    </h4>
+    <div>
+      <p class="mt-4 fst-italic fw-semibold fs-5 mb-5">
+        Para deshacerse de los archivos encriptados que quedan, simplemente
+        busque los archivos que coincidan con la extensión y elimínelos a
+        granel. Verifique dos veces que sus archivos se puedan abrir de manera
+        segura y que no haya rastro de daños.
+      </p>
+    </div>
+  </div>
+</div>
+<div class="container mt-2">
+  <div class="row">
+    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+      <div class="d-grid gap-2 col-3 mx-auto text-center">
+        <a
+          class="btn btn-success btn-lg"
+          role="button"
+          href="{% url 'encuesta' %}"
+          >Siguiente</a
+        >
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container mt-3 mb-4">
+  <div class="row">
+    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+      <div class="d-grid gap-2 col-3 mx-auto text-center">
+        <a
+          class="btn btn-secondary btn-lg"
+          role="button"
+          href="{% url 'encryption8' %}"
+          >Volver</a
+        >
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

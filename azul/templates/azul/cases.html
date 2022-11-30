@@ -1,0 +1,146 @@
+{% extends 'azul/index.html' %} {% block content %}
+<!-- 
+  Formulario de registro de casos con (Django).
+
+  <form enctype="multipart/form-data" method="post" , class="login-form">
+  {% csrf_token %} {{ form.as_p }}
+  <div class="botones">
+  <button class="registrarse" type="submit">Registrar</button>
+  <a class="vol-ver" href="{% url 'feed' %}" role="button">Volver</a>
+  </div>
+</form> 
+ -->
+
+<form enctype="multipart/form-data" method="post" , class="">
+  {% csrf_token %}
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 mt-4">
+        <div class="mb-3">
+          <label for="validationServer01" class="form-label" id=""
+            >Nombre de la empresa</label
+          >
+          <input
+            required
+            type="text"
+            class="form-control is-valid"
+            id="validationServer01"
+            placeholder=""
+            name="name"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="validationServer01" class="form-label" id=""
+            >Nit de la empresa</label
+          >
+          <input
+            required
+            type="number"
+            class="form-control is-valid"
+            id="validationServer01"
+            placeholder=""
+            name="nitempresa"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="validationServer01" class="form-label" id=""
+            >Nombre del Ransomware</label
+          >
+          <input
+            required
+            class="form-control"
+            list="datalistOptions"
+            id="validationServer01"
+            placeholder="Toque para buscar..."
+            name="rams"
+          />
+          <datalist id="datalistOptions">
+            <option value="WannaCry"></option>
+            <option value="Locky"></option>
+            <option value="Bad Rabbit"></option>
+            <option value="Ryuk"></option>
+            <option value="Shade/Troldesh"></option>
+            <option value="Jigsaw"></option>
+            <option value="CryptoLocker"></option>
+            <option value="Petya"></option>
+            <option value="GandCrab 5.2"></option>
+            <option value="GoldenEye"></option>
+          </datalist>
+        </div>
+
+        <div class="mb-3">
+          <label for="validationTextarea" class="form-label" id=""
+            >Detalle del caso de infección</label
+          >
+          <textarea
+            class="form-control is-valid"
+            id="validationTextarea"
+            rows="3"
+            name="detail"
+            placeholder="Detalle del caso"
+            required
+          ></textarea>
+        </div>
+        <div class="mb-3">
+          <label for="formFile" class="form-label" id=""
+            >Imagen evidencia de la infección</label
+          >
+          <input
+            required
+            class="form-control is-valid"
+            type="file"
+            id="formFile"
+            name="imagen"
+            aria-label="file example"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="validationTextarea" class="form-label" id=""
+            >Mensaje de rescate</label
+          >
+          <textarea
+            class="form-control is-valid"
+            id="validationTextarea"
+            rows="3"
+            name="email"
+            placeholder="Se debe redactar o copiar el correo enviado como mensaje de rescate"
+            required
+          ></textarea>
+        </div>
+        <div class="mb-4">
+          <label for="validationServer01" class="form-label" id=""
+            >Billetera de rescate</label
+          >
+          <input required type="text" class="form-control is-valid
+          id="validationServer01" placeholder="Moneda" name="wallet">
+        </div>
+        <div class="mb-3 d-grid gap-2 col-4 mx-auto">
+          <button class="btn btn-success" type="submit">Registrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</form>
+
+{% endblock %}
+<!-- <div class="mb-3">
+          <label for="exampleDataList" class="form-label" id="bg_white">Nombre del Ransomware</label>
+          <select name="ransomware" id="">
+            <option value="Ninguno">Ninguno</option>
+            <option value="WannaCry">WannaCry</option>
+            <option value="Locky">Locky</option>
+            <option value="Bad Rabbit">Bad Rabbit</option>
+            <option value="Ryuk">Ryuk</option>
+            <option value="Shade/Troldesh">Shade/Troldesh</option>
+            <option value="Jigsaw">Jigsaw</option>
+            <option value="CryptoLocker">CryptoLocker</option>
+            <option value="Petya">Petya</option>
+            <option value="GandCrab 5.2">GandCrab 5.2</option>
+            <option value="GoldenEye">GoldenEye</option>
+          </select>
+        </div> -->
+
+<!-- <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label" id="bg_white">Opcional si no aparece en la lista</label>
+          <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Digite el nombre del Ransomware que lo infecto si no aparece en la lista anterior " name="rams">
+        </div> -->
